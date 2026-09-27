@@ -1,5 +1,4 @@
 export default async function handler(req, res) {
-  // Permitimos consultas desde cualquier origen (evita CORS en Vercel)
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET');
 
