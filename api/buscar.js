@@ -10,7 +10,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const targetUrl = `https://api.mangadex.org/manga?title=${encodeURIComponent(titulo)}&limit=10&includes[]=cover_art`;
+    const targetUrl = `https://api.mangadex.org/manga?title=${encodeURIComponent(titulo)}&limit=20&includes[]=cover_art&contentRating[]=safe&contentRating[]=suggestive&contentRating[]=erotica&contentRating[]=pornographic`;
     
     const response = await fetch(targetUrl, {
       headers: {
